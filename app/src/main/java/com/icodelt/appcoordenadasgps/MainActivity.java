@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
 
         if (!permissoesNegadas.isEmpty()) {
             ActivityCompat.requestPermissions(MainActivity.this,
-                    permissoesNegadas.toArray(new String[permissoesNegadas.size()]), APP_PERMISSOES_ID);
+                    permissoesNegadas.toArray(new String[0]), APP_PERMISSOES_ID);
             return false;
         } else {
             return true;
