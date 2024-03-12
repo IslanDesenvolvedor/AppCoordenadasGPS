@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
 
     private static final int APP_PERMISSOES_ID = 2024;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000L, 1f, this);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onLocationChanged(@NonNull Location location) {
         if (location != null) {
